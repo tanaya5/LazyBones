@@ -1,0 +1,380 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+import lazybones.services.UserMaintenanceServices;
+import java.util.ArrayList;
+import lazybones.services.ManageProfileServices;
+import lazybones.beans.UserBean;
+
+public final class ActivityLog_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("         <link href=\"https://fonts.googleapis.com/css?family=Poppins:300\" rel=\"stylesheet\">\n");
+      out.write("    <link rel=\"stylesheet\" href=\"font-awesome.css\">\n");
+      out.write("\n");
+      out.write("    <link rel=\"stylesheet\" href=\"bootstrap.min.css\">\n");
+      out.write("\n");
+      out.write("    <link rel=\"stylesheet\" href=\"style.css\">\n");
+      out.write("        <title>Activity</title>\n");
+      out.write("        \n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("         ");
+
+            if(session!=null)
+            {
+                int userid=(int)session.getAttribute("userid");
+                UserBean objbean=ManageProfileServices.getDashboard(userid);
+        
+      out.write("\n");
+      out.write("      \n");
+      out.write("       <span style=\"font-size:30px;cursor:pointer; float:right; color:white; margin-right:20px;\" onclick=\"openNav()\">&#9776;</span>\n");
+      out.write("    \n");
+      out.write("            <div id=\"mySidenav\" class=\"rightsidenav\">\n");
+      out.write("                <a href=\"javascript:void(0)\" class=\"closebtn\" onclick=\"closeNav()\">&times;</a>\n");
+      out.write("                    <ul class=\"full-nav\">\n");
+      out.write("                        <li><a href=\"AdminPanel.jsp\">Dashboard</a></li>\n");
+      out.write("                        <li><a href=\"Home.jsp\">Log Out</a></li>\n");
+      out.write("                        <li><a href=\"#\">About Us</a></li>\n");
+      out.write("                        <li><a href=\"#\">Contact Us</a></li>\n");
+      out.write("                    </ul>\n");
+      out.write("            </div>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    <section class=\"header\">\n");
+      out.write("        <div class=\"container\">\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\" col-lg-2 col-md-2 col-sm-2 col-xs-12\">\n");
+      out.write("                </div>\n");
+      out.write("               <!-- <div class=\"col-lg-8 col-md-8 col-sm-8 col-xs-12\">\n");
+      out.write("                    <form>\n");
+      out.write("                        <input class=\"search\" type=\"text\" name=\"search\" value=\"\" placeholder=\"search\">\n");
+      out.write("                        <button type=\"submit\" <i class=\"fa fa-search btn\" aria-hidden=\"true\" style=\"color:#fff;\">\n");
+      out.write("                            </i>\n");
+      out.write("                        </button>\n");
+      out.write("                    </form>\n");
+      out.write("                </div>-->\n");
+      out.write("               <!-- <div class=\"col-md-2 col-lg-2 col-sm-2 col-xs-12\">\n");
+      out.write("                    <div class=\"date\">\n");
+      out.write("                        <p> 10/02/2016 - 11/02/2017 <i class=\"fa fa-caret-down\" aria-hidden=\"true\" style=\"color:#fff;\"></i>\n");
+      out.write("                        </p>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>-->\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </section>\n");
+      out.write("\n");
+      out.write("    <section class=\"dashoard\">\n");
+      out.write("        <div class=\"container indx\">\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-md-5\">\n");
+      out.write("                    <div class=\"admin\">\n");
+      out.write("                        <svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"100px\" height=\"100px\" viewBox=\"0 0 55 55\" style=\"enable-background:new 0 0 55 55;\" xml:space=\"preserve\">\n");
+      out.write("                            <path d=\"M55,27.5C55,12.337,42.663,0,27.5,0S0,12.337,0,27.5c0,8.009,3.444,15.228,8.926,20.258l-0.026,0.023l0.892,0.752\n");
+      out.write("\tc0.058,0.049,0.121,0.089,0.179,0.137c0.474,0.393,0.965,0.766,1.465,1.127c0.162,0.117,0.324,0.234,0.489,0.348\n");
+      out.write("\tc0.534,0.368,1.082,0.717,1.642,1.048c0.122,0.072,0.245,0.142,0.368,0.212c0.613,0.349,1.239,0.678,1.88,0.98\n");
+      out.write("\tc0.047,0.022,0.095,0.042,0.142,0.064c2.089,0.971,4.319,1.684,6.651,2.105c0.061,0.011,0.122,0.022,0.184,0.033\n");
+      out.write("\tc0.724,0.125,1.456,0.225,2.197,0.292c0.09,0.008,0.18,0.013,0.271,0.021C25.998,54.961,26.744,55,27.5,55\n");
+      out.write("\tc0.749,0,1.488-0.039,2.222-0.098c0.093-0.008,0.186-0.013,0.279-0.021c0.735-0.067,1.461-0.164,2.178-0.287\n");
+      out.write("\tc0.062-0.011,0.125-0.022,0.187-0.034c2.297-0.412,4.495-1.109,6.557-2.055c0.076-0.035,0.153-0.068,0.229-0.104\n");
+      out.write("\tc0.617-0.29,1.22-0.603,1.811-0.936c0.147-0.083,0.293-0.167,0.439-0.253c0.538-0.317,1.067-0.648,1.581-1\n");
+      out.write("\tc0.185-0.126,0.366-0.259,0.549-0.391c0.439-0.316,0.87-0.642,1.289-0.983c0.093-0.075,0.193-0.14,0.284-0.217l0.915-0.764\n");
+      out.write("\tl-0.027-0.023C51.523,42.802,55,35.55,55,27.5z M2,27.5C2,13.439,13.439,2,27.5,2S53,13.439,53,27.5\n");
+      out.write("\tc0,7.577-3.325,14.389-8.589,19.063c-0.294-0.203-0.59-0.385-0.893-0.537l-8.467-4.233c-0.76-0.38-1.232-1.144-1.232-1.993v-2.957\n");
+      out.write("\tc0.196-0.242,0.403-0.516,0.617-0.817c1.096-1.548,1.975-3.27,2.616-5.123c1.267-0.602,2.085-1.864,2.085-3.289v-3.545\n");
+      out.write("\tc0-0.867-0.318-1.708-0.887-2.369v-4.667c0.052-0.519,0.236-3.448-1.883-5.864C34.524,9.065,31.541,8,27.5,8\n");
+      out.write("\ts-7.024,1.065-8.867,3.168c-2.119,2.416-1.935,5.345-1.883,5.864v4.667c-0.568,0.661-0.887,1.502-0.887,2.369v3.545\n");
+      out.write("\tc0,1.101,0.494,2.128,1.34,2.821c0.81,3.173,2.477,5.575,3.093,6.389v2.894c0,0.816-0.445,1.566-1.162,1.958l-7.907,4.313\n");
+      out.write("\tc-0.252,0.137-0.502,0.297-0.752,0.476C5.276,41.792,2,35.022,2,27.5z M42.459,48.132c-0.35,0.254-0.706,0.5-1.067,0.735\n");
+      out.write("\tc-0.166,0.108-0.331,0.216-0.5,0.321c-0.472,0.292-0.952,0.57-1.442,0.83c-0.108,0.057-0.217,0.111-0.326,0.167\n");
+      out.write("\tc-1.126,0.577-2.291,1.073-3.488,1.476c-0.042,0.014-0.084,0.029-0.127,0.043c-0.627,0.208-1.262,0.393-1.904,0.552\n");
+      out.write("\tc-0.002,0-0.004,0.001-0.006,0.001c-0.648,0.16-1.304,0.293-1.964,0.402c-0.018,0.003-0.036,0.007-0.054,0.01\n");
+      out.write("\tc-0.621,0.101-1.247,0.174-1.875,0.229c-0.111,0.01-0.222,0.017-0.334,0.025C28.751,52.97,28.127,53,27.5,53\n");
+      out.write("\tc-0.634,0-1.266-0.031-1.895-0.078c-0.109-0.008-0.218-0.015-0.326-0.025c-0.634-0.056-1.265-0.131-1.89-0.233\n");
+      out.write("\tc-0.028-0.005-0.056-0.01-0.084-0.015c-1.322-0.221-2.623-0.546-3.89-0.971c-0.039-0.013-0.079-0.027-0.118-0.04\n");
+      out.write("\tc-0.629-0.214-1.251-0.451-1.862-0.713c-0.004-0.002-0.009-0.004-0.013-0.006c-0.578-0.249-1.145-0.525-1.705-0.816\n");
+      out.write("\tc-0.073-0.038-0.147-0.074-0.219-0.113c-0.511-0.273-1.011-0.568-1.504-0.876c-0.146-0.092-0.291-0.185-0.435-0.279\n");
+      out.write("\tc-0.454-0.297-0.902-0.606-1.338-0.933c-0.045-0.034-0.088-0.07-0.133-0.104c0.032-0.018,0.064-0.036,0.096-0.054l7.907-4.313\n");
+      out.write("\tc1.36-0.742,2.205-2.165,2.205-3.714l-0.001-3.602l-0.23-0.278c-0.022-0.025-2.184-2.655-3.001-6.216l-0.091-0.396l-0.341-0.221\n");
+      out.write("\tc-0.481-0.311-0.769-0.831-0.769-1.392v-3.545c0-0.465,0.197-0.898,0.557-1.223l0.33-0.298v-5.57l-0.009-0.131\n");
+      out.write("\tc-0.003-0.024-0.298-2.429,1.396-4.36C21.583,10.837,24.061,10,27.5,10c3.426,0,5.896,0.83,7.346,2.466\n");
+      out.write("\tc1.692,1.911,1.415,4.361,1.413,4.381l-0.009,5.701l0.33,0.298c0.359,0.324,0.557,0.758,0.557,1.223v3.545\n");
+      out.write("\tc0,0.713-0.485,1.36-1.181,1.575l-0.497,0.153l-0.16,0.495c-0.59,1.833-1.43,3.526-2.496,5.032c-0.262,0.37-0.517,0.698-0.736,0.949\n");
+      out.write("\tl-0.248,0.283V39.8c0,1.612,0.896,3.062,2.338,3.782l8.467,4.233c0.054,0.027,0.107,0.055,0.16,0.083\n");
+      out.write("\tC42.677,47.979,42.567,48.054,42.459,48.132z\" />\n");
+      out.write("                           <h3 class=\"dash-txt\" style=\"color:#fff;\"> ");
+      out.print( objbean.getName());
+      out.write(" </h3>\n");
+      out.write("\n");
+      out.write("                            <hr class=\"dash\">\n");
+      out.write("                            <div class=\"admin-lnks\">\n");
+      out.write("                                <ul>\n");
+      out.write("                                    <li>\n");
+      out.write("                                    <p class=\"dash-txt\" style=\"color:#fff;\"> ");
+      out.print( objbean.getType());
+      out.write(" </p>\n");
+      out.write("                                    </li>\n");
+      out.write("                                    <li>\n");
+      out.write("                                    <p class=\"dash-txt\" style=\"color:#fff;\"> ");
+      out.print( objbean.getEmail());
+      out.write(" </p>\n");
+      out.write("                                    </li>\n");
+      out.write("                                    <li><a href=\"ManageUser.jsp\">Manage Users</a>\n");
+      out.write("                                    </li>\n");
+      out.write("                                    <li><a href=\"UserReport.jsp\"> User Report </a>\n");
+      out.write("                                    </li>\n");
+      out.write("                                </ul>\n");
+      out.write("                            </div>\n");
+      out.write("                        </svg>\n");
+      out.write("\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"col-md-7\">\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </section>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    <section class=\"manage-user-table\">\n");
+      out.write("        <div style=\"padding-left: 300px;\">\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-lg-12 col-md-12 col-sm-12 col-xs-12\">\n");
+      out.write("                    <div class=\"manage-table\">\n");
+      out.write("                        <table class=\"table\" style=\"color:white\">\n");
+      out.write("                            <thead>\n");
+      out.write("                               \n");
+      out.write("                        <tr>\n");
+      out.write("                            <th>Email</th>\n");
+      out.write("                            <th>Name</th>\n");
+      out.write("                            <th>Mobile Number</th>\n");
+      out.write("                            <th>Gender</th>\n");
+      out.write("                            <th>User Type</th>\n");
+      out.write("                            <th>User Status</th>\n");
+      out.write("                            <th>Signup Using</th>\n");
+      out.write("                        </tr>\n");
+      out.write("                            </thead>\n");
+      out.write("                            <tbody>\n");
+      out.write("                ");
+ int pg = 0;
+                if (request.getParameter("pg") != null) {
+                    pg = Integer.parseInt(request.getParameter("pg"));
+                } else {
+                    pg = 1;
+                }
+                ArrayList<UserBean> al = UserMaintenanceServices.getAllUsers(pg);
+                for (int i = 0; i < al.size(); i++) {
+                    objbean = al.get(i);
+            
+      out.write("\n");
+      out.write("            <tr>\n");
+      out.write("                <td>");
+      out.print( objbean.getEmail());
+      out.write("</td>\n");
+      out.write("                <td>");
+      out.print( objbean.getName());
+      out.write("</td>\n");
+      out.write("                <td>");
+      out.print( objbean.getContact());
+      out.write("</td>\n");
+      out.write("                ");
+
+                    if (objbean.isGender()) {
+                
+      out.write("\n");
+      out.write("                <td>Female</td>\n");
+      out.write("                ");
+
+                } else {
+                
+      out.write("\n");
+      out.write("                <td>Male</td>\n");
+      out.write("                ");
+
+                    }
+                if(objbean.getType().equalsIgnoreCase("Administrator"))
+                {
+                
+      out.write("\n");
+      out.write("                <td>");
+      out.print( objbean.getType());
+      out.write("   <a href=\"ChangeUserType?userid=");
+      out.print(objbean.getUserid());
+      out.write("&pg=");
+      out.print(pg);
+      out.write("\"><img src=\"admin.png\" width=\"20px\" height=\"20px\"></a></td>\n");
+      out.write("                ");
+
+                 }
+                else
+                {
+                
+      out.write("\n");
+      out.write("                <td>");
+      out.print( objbean.getType());
+      out.write("   <a href=\"ChangeUserType?userid=");
+      out.print(objbean.getUserid());
+      out.write("&pg=");
+      out.print(pg);
+      out.write("\"><img src=\"user.png\" width=\"20px\" height=\"20px\"></a></td>\n");
+      out.write("                ");
+
+                }
+                    if (objbean.isStatus()) {
+                
+      out.write("\n");
+      out.write("                <td>Active  <a href=\"ActiveInactive?userid=");
+      out.print(objbean.getUserid());
+      out.write("&pg=");
+      out.print(pg);
+      out.write("\"><img src=\"c.jpg\" width=\"20px\" height=\"20px\"></a></td>\n");
+      out.write("                ");
+
+                } else {
+                
+      out.write("\n");
+      out.write("                <td>Inactive <a href=\"ActiveInactive?userid=");
+      out.print(objbean.getUserid());
+      out.write("&pg=");
+      out.print(pg);
+      out.write("\"><img src=\"T.jpg\" width=\"20px\" height=\"20px\"></a></td>\n");
+      out.write("                ");
+
+                    }
+                
+      out.write("\n");
+      out.write("                <td>");
+      out.print( objbean.getSignup());
+      out.write("</td>\n");
+      out.write("               \n");
+      out.write("            </tr>\n");
+      out.write("            ");
+
+                }
+            
+      out.write("\n");
+      out.write("        </table>\n");
+      out.write("        <div style=\"color: black; background-color: #1A1718; text-align: center;\">\n");
+      out.write("        \n");
+      out.write("        ");
+
+             int count=UserMaintenanceServices.numberOfRegisteredUsers();
+             int j=0;
+             if(count%10==0)
+             {
+                 j=count/10;
+             }
+             else
+             {
+                 j=(count/10)+1;
+             }
+             for(int i=1;i<=j;i++)
+             {
+                 out.println("&nbsp;&nbsp;<a href='ManageUser.jsp?pg="+i+"'>"+i+"</a>");
+             }
+        
+      out.write("\n");
+      out.write("\n");
+      out.write("        <br>\n");
+      out.write("       <br>\n");
+      out.write("        <button onclick=\"location.href='AdminPanel.jsp'\">Back</button>\n");
+      out.write("</div> \n");
+      out.write("                              \n");
+      out.write("                            </tbody>\n");
+      out.write("                        </table>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </section>\n");
+      out.write("        ");
+
+             }
+             else
+             {
+        
+      out.write("\n");
+      out.write("        <h4>Your Session Expired....Please Login Again!! </h4>\n");
+      out.write("        \n");
+      out.write("        ");
+        
+             }
+        
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("    <script>\n");
+      out.write("        function openNav() {\n");
+      out.write("            document.getElementById(\"mySidenav\").style.width = \"100%\";\n");
+      out.write("        }\n");
+      out.write("\n");
+      out.write("        function closeNav() {\n");
+      out.write("            document.getElementById(\"mySidenav\").style.width = \"0\";\n");
+      out.write("        }\n");
+      out.write("    </script>\n");
+      out.write("    <!-- js files -->\n");
+      out.write("    <script src=\"js/jquery.min.js\"></script>\n");
+      out.write("    <script src=\"js/bootstrap.min.js\"></script>\n");
+      out.write("        \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

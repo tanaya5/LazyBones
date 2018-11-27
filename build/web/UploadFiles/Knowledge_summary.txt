@@ -1,0 +1,3 @@
+ Machine learning is another core part of AI .
+ Learning without any kind of supervision requires an ability to identify patterns in streams of inputs whereas learning with adequate supervision involves classification and numerical regressions .
+ Classification determines the category an object belongs to and regression deals with obtaining a set of numerical input or output examples thereby discovering functions enabling the generation of suitable outputs from respective inputs .
